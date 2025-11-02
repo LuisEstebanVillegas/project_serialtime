@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.36 227.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        font-size: 66.68px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+        font-family: BodoniMT, 'Bodoni MT';
+      }
+
+      .cls-4 {
+        font-size: 68.95px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1">
+    <polygon class="cls-2" points="231.34 108.72 162.86 144.4 94.38 108.72 94.38 37.37 162.86 1.69 231.34 37.37 231.34 108.72"/>
+    <polygon class="cls-1" points="204.69 51.33 229.86 64.41 229.86 38.26 204.69 51.33"/>
+    <polygon class="cls-1" points="121.04 94.71 95.88 107.79 95.88 81.63 121.04 94.71"/>
+  </g>
+  <g id="Capa_2" data-name="Capa 2">
+    <polygon class="cls-1" points="162.87 50.31 119.74 72.85 119.74 73.03 162.88 95.45 119.74 117.87 119.74 117.91 162.87 140.44 206.01 117.91 206.01 72.85 162.87 50.31"/>
+    <polygon class="cls-1" points="162.87 50.19 206 27.77 162.87 5.25 119.74 27.78 119.74 72.84 162.87 95.38 206.01 72.84 206.01 72.61 162.87 50.19"/>
+  </g>
+  <g id="Capa_3" data-name="Capa 3">
+    <text class="cls-3" transform="translate(120.35 72.63) scale(1.12 1)"><tspan x="0" y="0">S</tspan></text>
+    <text class="cls-4" transform="translate(165.83 118.07) scale(.88 1)"><tspan x="0" y="0">T</tspan></text>
+  </g>
+</svg>

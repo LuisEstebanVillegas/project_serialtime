@@ -1,115 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SerialTime — Sobre Nosotros</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerialTime - Sobre Nosotros</title>
+    <link rel="stylesheet" href="/CSS/Style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="logo-placeholder">S<span>T</span></div>
-        <nav class="main-nav">
-          <a href="index.html">Inicio</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="contacto.html">Contacto</a>
-          <a href="nosotros.html" class="active">Sobre Nosotros</a>
-        </nav>
-      </div>
-
-      <div class="header-actions">
-        <div class="search">
-          <input id="searchInputNosotros" type="search" placeholder="Buscar" />
-          <button id="searchBtnNosotros">Buscar</button>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SerialTime</h1>
+            </div>
+            <nav id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="sobre-nosotros.html" class="active">Sobre Nosotros</a>
+            </nav>
+            <div class="header-icons">
+                <input type="text" placeholder="Buscar" class="search-box" id="searchBox">
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
         </div>
+    </header>
 
-        <button id="menuToggleNosotros" class="menu-toggle" aria-label="Abrir menú">
-          ☰
-        </button>
-      </div>
-    </div>
-
-    <div id="mobileMenuNosotros" class="mobile-menu">
-      <a href="index.html">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="nosotros.html">Sobre Nosotros</a>
-    </div>
-  </header>
-
-  <main class="container about-page">
-    <section class="about-hero">
-      <h1>SerialTime: El tiempo tiene estilo</h1>
-      <p>En SerialTime no solo medimos el tiempo: lo celebramos. Diseñamos piezas con estilo, funcionalidad y carácter.</p>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <h3>SerialTime: El tiempo tiene estilo</h3>
+            
+            <p>En SerialTime, no solo medimos el tiempo: lo celebramos.</p>
+            
+            <p>Nacimos de una pasión por la precisión, el diseño y la innovación. Somos una marca de relojes que entiende que cada segundo cuenta, y que el reloj que llevas dice tanto de ti como tus palabras. Por eso, creamos piezas que combinan estilo, funcionalidad y carácter.</p>
+            
+            <p>Desde nuestros inicios, hemos tenido una misión clara: ofrecer relojes con identidad, que se sientan únicos y auténticos, como quienes los usan. Cada modelo SerialTime es diseñado con atención al detalle, utilizando materiales de alta calidad y mecanismos confiables, para acompañarte en todos tus momentos —los grandes y los cotidianos.</p>
+            
+            <h3>¿Por qué SerialTime?</h3>
+            
+            <ul>
+                <li>Diseño original que marca la diferencia.</li>
+                <li>Calidad duradera que resiste el paso del tiempo.</li>
+                <li>Pasión por la relojería que se nota en cada modelo.</li>
+            </ul>
+            
+            <p>Ya sea que busques elegancia, deportividad o un toque urbano, en SerialTime tenemos el reloj perfecto para tu ritmo de vida.</p>
+            
+            <p><strong>Porque no se trata solo de ver la hora, sino de cómo la vives.</strong></p>
+        </div>
     </section>
 
-    <section class="about-content">
-      <h2>Nuestra historia</h2>
-      <p>Desde nuestros inicios, nuestra misión ha sido ofrecer relojes con identidad, que se sientan únicos y auténticos. Cada modelo SerialTime se diseña con atención al detalle y materiales de alta calidad para acompañarte en todos tus momentos.</p>
-
-      <h3>¿Por qué SerialTime?</h3>
-      <ul>
-        <li>Diseño original que marca la diferencia.</li>
-        <li>Calidad duradera que resiste el paso del tiempo.</li>
-        <li>Pasión por la relojería que se nota en cada modelo.</li>
-      </ul>
-
-      <h3>Nuestro equipo</h3>
-      <p>Equipo pequeño, pero comprometido. Diseñadores, relojeros y personas que aman lo que hacen.</p>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="avatar-placeholder">Foto</div>
-          <h4>Nombre Apellido</h4>
-          <p>Fundador / Diseñador</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                </div>
+                <div class="footer-info">
+                    <p><strong>SerialTime</strong></p>
+                    <p>soporte@serialtime.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 Serial Time Derechos Reservados</p>
+                <div class="footer-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Políticas de envío</a>
+                </div>
+            </div>
         </div>
-        <div class="team-card">
-          <div class="avatar-placeholder">Foto</div>
-          <h4>Nombre Apellido</h4>
-          <p>Maestro relojero</p>
-        </div>
-        <div class="team-card">
-          <div class="avatar-placeholder">Foto</div>
-          <h4>Nombre Apellido</h4>
-          <p>Marketing y prensa</p>
-        </div>
-      </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>SerialTime</h4>
-        <p>El tiempo tiene estilo.</p>
-      </div>
-      <div>
-        <h5>Enlaces</h5>
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="contacto.html">Contacto</a>
-          <a href="nosotros.html">Sobre Nosotros</a>
-        </nav>
-      </div>
-      <div>
-        <h5>Contacto</h5>
-        <p>soporte@serialtime.com</p>
-      </div>
-    </div>
-
-    <div class="copyright">
-      <div class="container">
-        <small>© 2025 Serial Time — Derechos Reservados</small>
-        <div class="policy-links">
-          <a href="#">Términos y condiciones</a>
-          <a href="#">Políticas de envío</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="/JS/script.js"></script>
 </body>
 </html>

@@ -1,160 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SerialTime — Inicio</title>
-  <link rel="stylesheet" href="CSS/Style.css" />
-  <script src="JS/Script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerialTime - Inicio</title>
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <!-- Deja aquí tu logo -->
-        <div class="logo-placeholder">S<span>T</span></div>
-        <nav class="main-nav">
-          <a href="index.html" class="active">Inicio</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="contacto.html">Contacto</a>
-          <a href="nosotros.html">Sobre Nosotros</a>
-        </nav>
-      </div>
-
-      <div class="header-actions">
-        <div class="search">
-          <input id="searchInput" type="search" placeholder="Buscar" />
-          <button id="searchBtn">Buscar</button>
+    <!-- Header -->
+    <header>
+        
+        <div class="container">
+            <div class="logo">
+              <img src="Assets/Logo SerialTime v2.1.png" alt="logo" width="80">
+            </div>
+            <div class="header-letras">
+              <h1>SerialTime</h1>
+              <nav id="nav">
+                <a href="/" class="active">Inicio</a>
+                <a href="/catálogo/">Catálogo</a>
+                <a href="/contacto">Contacto</a>
+                <a href="/sobre_nosotros/">Sobre Nosotros</a>
+              </nav>
+            </div>
+            
+            <div class="header-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar" class="search-box" id="searchBox">
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
         </div>
+    </header>
 
-        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">
-          ☰
-        </button>
-      </div>
-    </div>
-
-    <div id="mobileMenu" class="mobile-menu">
-      <a href="index.html">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="nosotros.html">Sobre Nosotros</a>
-    </div>
-  </header>
-
-  <main>
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>SerialTime</h1>
-          <p class="lead">Todo lo nuevo y actual — relojes con identidad y precisión.</p>
-          <div class="hero-ctas">
-            <a href="catalogo.html" class="btn btn-primary">Ver catálogo</a>
-            <a href="nosotros.html" class="btn btn-outline">Conocer la marca</a>
-          </div>
+      <div class="hero-images">
+        <img src="Assets/Seiko.png" alt="Reloj dorado">
+        <img src="Assets/QyQ.png" alt="Reloj negro">
+        <img src="Assets/Geneva.webp" alt="Reloj plateado">
+      </div>
+
+      <div class="hero-text">
+        <h2>Todo lo nuevo y actual</h2>
+        <div class="arrow-down">▼</div>
+      </div>
+    </section>
+
+
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img"><img src="Assets/Mido.png" alt="Reloj-mido"></div>
+                    </div>
+                    <h3>Mido 2024 Oro Rosa</h3>
+                    <p class="price">$4'500.000</p>
+                    <button class="btn-primary">Ver Detalles</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img"><img src="Assets/Tissot.png" alt="Tissot"></div>
+                    </div>
+                    <h3>Tissot cara azul Acero</h3>
+                    <p class="price">$3'200.000</p>
+                    <button class="btn-primary">Ver Detalles</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img"><img src="Assets/Chronos.png" alt="Chronos"></div>
+                    </div>
+                    <h3>Chronos cara chocolate</h3>
+                    <p class="price">$6'100.000</p>
+                    <button class="btn-primary">Ver Detalles</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img"><img src="Assets/crrju.png" alt="crrju"></div>
+                    </div>
+                    <h3>CRRJU negro Acero</h3>
+                    <p class="price">$1'800.000</p>
+                    <button class="btn-primary">Ver Detalles</button>
+                </div>
+            </div>
         </div>
-        <div class="hero-image">
-          <!-- Imagen del hero / deja el espacio para tu imagen -->
-          <div class="image-placeholder">Imagen principal</div>
-        </div>
-      </div>
     </section>
 
-    <section class="features container">
-      <div class="feature">
-        <h3>Diseño original</h3>
-        <p>Modelos pensados para marcar la diferencia en cada momento.</p>
-      </div>
-      <div class="feature">
-        <h3>Calidad duradera</h3>
-        <p>Materiales y mecanismos confiables que resisten el paso del tiempo.</p>
-      </div>
-      <div class="feature">
-        <h3>Pasión por la relojería</h3>
-        <p>Atención al detalle en cada pieza que producimos.</p>
-      </div>
-    </section>
-
-    <section class="products container" id="productosDestacados">
-      <h2>Catálogo destacado</h2>
-      <div class="products-grid">
-        <!-- Tarjetas de ejemplo; reemplaza las imágenes y textos -->
-        <article class="product-card">
-          <div class="product-image placeholder-sm">Imagen</div>
-          <h4>Mido 2024 Oro Rosa</h4>
-          <p class="price">4’500.000</p>
-          <a href="catalogo.html" class="btn btn-sm">Ver</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image placeholder-sm">Imagen</div>
-          <h4>Tissot cara azul Acero</h4>
-          <p class="price">3’200.000</p>
-          <a href="catalogo.html" class="btn btn-sm">Ver</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image placeholder-sm">Imagen</div>
-          <h4>Chronos cara chocolate</h4>
-          <p class="price">6’100.000</p>
-          <a href="catalogo.html" class="btn btn-sm">Ver</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image placeholder-sm">Imagen</div>
-          <h4>CRRJU negro Acero</h4>
-          <p class="price">1’800.000</p>
-          <a href="catalogo.html" class="btn btn-sm">Ver</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="newsletter container">
-      <div class="newsletter-inner">
-        <div>
-          <h3>Mantente al tanto</h3>
-          <p>Suscríbete para recibir lanzamientos y ofertas.</p>
-        </div>
-        <form id="newsletterForm" class="newsletter-form">
-          <input type="email" placeholder="Tu correo electrónico" required />
-          <button class="btn">Suscribirme</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
+    <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>SerialTime</h4>
-        <p>El tiempo tiene estilo.</p>
-      </div>
-      <div>
-        <h5>Enlaces</h5>
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="contacto.html">Contacto</a>
-          <a href="nosotros.html">Sobre Nosotros</a>
-        </nav>
-      </div>
-      <div>
-        <h5>Contacto</h5>
-        <p>soporte@serialtime.com</p>
-        <p>Respondemos en menos de 24 horas hábiles.</p>
-      </div>
-    </div>
+    <div class="container footer-container">
 
-    <div class="copyright">
-      <div class="container">
-        <small>© 2025 Serial Time — Derechos Reservados</small>
-        <div class="policy-links">
-          <a href="#">Términos y condiciones</a>
-          <a href="#">Políticas de envío</a>
+      <div class="footer-column brand">
+        <h2 class="footer-logo">SerialTime</h2>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
         </div>
       </div>
+
+      <div class="footer-column nav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Sobre Nosotros</a>
+      </div>
+
+      <div class="footer-column info">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Políticas de envío</a>
+        <p>soporte@serialtime.com</p>
+        <p>2025 Serial Time Derechos Reservados</p>
+      </div>
+
     </div>
   </footer>
 
-  <script src="script.js"></script>
+
+    <script src="/JS/script.js"></script>
 </body>
 </html>

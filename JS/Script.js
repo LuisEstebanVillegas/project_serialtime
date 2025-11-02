@@ -1,81 +1,70 @@
-// Manejo de menú móvil y búsquedas simples
-document.addEventListener('DOMContentLoaded', function () {
-  // Mobile menus across pages: try to find them by id (each page has its own id)
-  [['menuToggle','mobileMenu'], ['menuToggleCatalog','mobileMenuCatalog'], ['menuToggleContact','mobileMenuContact'], ['menuToggleNosotros','mobileMenuNosotros']]
-    .forEach(pair => {
-      const toggle = document.getElementById(pair[0]);
-      const menu = document.getElementById(pair[1]);
-      if(toggle && menu){
-        toggle.addEventListener('click', () => {
-          const isOpen = menu.style.display === 'flex';
-          menu.style.display = isOpen ? 'none' : 'flex';
+// Menu Toggle para móviles
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menuToggle');
+    var nav = document.getElementById('nav');
+    
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
         });
-      }
-    });
-
-  // Newsletter form (simulación)
-  const newsletter = document.getElementById('newsletterForm');
-  if(newsletter){
-    newsletter.addEventListener('submit', function(e){
-      e.preventDefault();
-      alert('¡Gracias! Te hemos suscrito (esto es una demo).');
-      newsletter.reset();
-    });
-  }
-
-  // Contact form (simulación)
-  const contactForm = document.getElementById('contactForm');
-  if(contactForm){
-    contactForm.addEventListener('submit', function(e){
-      e.preventDefault();
-      alert('Mensaje enviado. Gracias por contactarnos (demo).');
-      contactForm.reset();
-    });
-  }
-
-  // Search buttons - hacen scroll a sección de productos o filtran ejemplos
-  const searchPairs = [
-    ['searchBtn','searchInput','productosDestacados'],
-    ['searchBtnCatalog','searchInputCatalog','catalogGrid'],
-    ['searchBtnContact','searchInputContact',null],
-    ['searchBtnNosotros','searchInputNosotros',null]
-  ];
-
-  searchPairs.forEach(([btnId,inputId,anchorId]) => {
-    const btn = document.getElementById(btnId);
-    const input = document.getElementById(inputId);
-    if(btn && input){
-      btn.addEventListener('click', () => {
-        const q = input.value.trim().toLowerCase();
-        if(!q){
-          alert('Ingresa un término de búsqueda (demo).');
-          return;
-        }
-        if(anchorId){
-          // si hay sección de productos: buscar por nombre en texto de tarjetas
-          const grid = document.getElementById(anchorId);
-          if(grid){
-            const cards = grid.querySelectorAll('.product-card');
-            cards.forEach(card => {
-              const title = (card.querySelector('h4')?.textContent || '').toLowerCase();
-              card.style.display = title.includes(q) ? '' : 'none';
-            });
-            return;
-          }
-        }
-        alert('Búsqueda demo: ' + q);
-      });
     }
-  });
-
-  // Clear filters (demo)
-  const clearFilters = document.getElementById('clearFilters');
-  if(clearFilters){
-    clearFilters.addEventListener('click', () => {
-      document.getElementById('filterType').value = '';
-      document.getElementById('filterPrice').value = '';
-      // podrías añadir lógica de filtro real aquí
-      alert('Filtros limpiados (demo).');
+    
+    // Cerrar menú al hacer clic en un enlace (móvil)
+    var navLinks = nav.querySelectorAll('a');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                nav.classList.remove('active');
+            }
+        });
     });
-  }
+    
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', function(event) {
+        var isClickInside = nav.contains(event.target) || menuToggle.contains(event.target);
+        if (!isClickInside && window.innerWidth <= 768) {
+            nav.classList.remove('active');
+        }
+    });
+    
+    // Búsqueda simple (simulación)
+    var searchBox = document.getElementById('searchBox');
+    if (searchBox) {
+        searchBox.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                var searchTerm = searchBox.value.trim();
+                if (searchTerm) {
+                    alert('Buscando: ' + searchTerm + '\n(Funcionalidad de búsqueda pendiente)');
+                }
+            }
+        });
+    }
+    
+    // Animación suave al hacer scroll
+    var links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            var href = link.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                var target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+    
+    // Botones "Ver Detalles" (simulación)
+    var detailButtons = document.querySelectorAll('.btn-primary');
+    detailButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var productCard = button.closest('.product-card');
+            var productName = productCard.querySelector('h3').textContent;
+            alert('Ver detalles de: ' + productName + '\n(Funcionalidad pendiente)');
+        });
+    });
 });

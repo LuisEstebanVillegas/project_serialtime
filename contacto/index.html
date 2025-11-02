@@ -1,126 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SerialTime — Contacto</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerialTime - Contacto</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="logo-placeholder">S<span>T</span></div>
-        <nav class="main-nav">
-          <a href="index.html">Inicio</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="contacto.html" class="active">Contacto</a>
-          <a href="nosotros.html">Sobre Nosotros</a>
-        </nav>
-      </div>
-
-      <div class="header-actions">
-        <div class="search">
-          <input id="searchInputContact" type="search" placeholder="Buscar" />
-          <button id="searchBtnContact">Buscar</button>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SerialTime</h1>
+            </div>
+            <nav id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html" class="active">Contacto</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            </nav>
+            <div class="header-icons">
+                <input type="text" placeholder="Buscar" class="search-box" id="searchBox">
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
         </div>
+    </header>
 
-        <button id="menuToggleContact" class="menu-toggle" aria-label="Abrir menú">
-          ☰
-        </button>
-      </div>
-    </div>
-
-    <div id="mobileMenuContact" class="mobile-menu">
-      <a href="index.html">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="nosotros.html">Sobre Nosotros</a>
-    </div>
-  </header>
-
-  <main class="container contact-page">
-    <section class="contact-intro">
-      <h1>Contacto</h1>
-      <p>¿Tienes preguntas? Estamos aquí para ayudarte. Respuesta en menos de 24 horas hábiles.</p>
-    </section>
-
-    <section class="contact-grid">
-      <div class="contact-card">
-        <h3>Correo</h3>
-        <p><strong>soporte@serialtime.com</strong></p>
-        <p>Consultas sobre pedidos: incluye tu número de pedido.</p>
-      </div>
-
-      <div class="contact-card">
-        <h3>Prensa y colaboraciones</h3>
-        <p><strong>press@serialtime.com</strong></p>
-      </div>
-
-      <div class="contact-card map-card">
-        <h3>Horario de atención</h3>
-        <p>Lunes a Viernes — 9:00 a.m. a 6:00 p.m.</p>
-        <!-- Deja espacio para un mapa si lo quieres agregar -->
-        <div class="map-placeholder">Mapa</div>
-      </div>
-    </section>
-
-    <section class="contact-form">
-      <h2>Escríbenos</h2>
-      <form id="contactForm">
-        <label>Nombre
-          <input type="text" name="name" required />
-        </label>
-
-        <label>Correo electrónico
-          <input type="email" name="email" required />
-        </label>
-
-        <label>Asunto
-          <input type="text" name="subject" required />
-        </label>
-
-        <label>Mensaje
-          <textarea name="message" rows="6" required></textarea>
-        </label>
-
-        <button type="submit" class="btn">Enviar mensaje</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>SerialTime</h4>
-        <p>El tiempo tiene estilo.</p>
-      </div>
-      <div>
-        <h5>Enlaces</h5>
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="contacto.html">Contacto</a>
-          <a href="nosotros.html">Sobre Nosotros</a>
-        </nav>
-      </div>
-      <div>
-        <h5>Contacto</h5>
-        <p>soporte@serialtime.com</p>
-      </div>
-    </div>
-
-    <div class="copyright">
-      <div class="container">
-        <small>© 2025 Serial Time — Derechos Reservados</small>
-        <div class="policy-links">
-          <a href="#">Términos y condiciones</a>
-          <a href="#">Políticas de envío</a>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p><strong>¿Tienes preguntas? Estamos aquí para ayudarte.</strong></p>
+            
+            <p>En SerialTime valoramos cada segundo, y el tuyo es importante para nosotros. Si tienes dudas sobre nuestros productos, necesitas ayuda con un pedido o simplemente quieres saludarnos, no dudes en escribirnos. Estaremos encantados de atenderte.</p>
+            
+            <div class="contact-info">
+                <h3>Correo electrónico</h3>
+                <p><strong>soporte@serialtime.com</strong></p>
+                <p>Respondemos en menos de 24 horas hábiles.</p>
+                
+                <h3>Consultas sobre pedidos</h3>
+                <p>¿Ya realizaste una compra y necesitas más información? Incluye tu número de pedido en el mensaje para ayudarte más rápido.</p>
+                
+                <h3>Colaboraciones y prensa</h3>
+                <p><strong>press@serialtime.com</strong></p>
+                
+                <h3>Horario de atención</h3>
+                <p>Lunes a Viernes — 9:00 a.m. a 6:00 p.m. (hora local)</p>
+                
+                <p><strong>También puedes seguirnos en redes:</strong></p>
+                <p>[Espacio para íconos de redes sociales]</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                </div>
+                <div class="footer-info">
+                    <p><strong>SerialTime</strong></p>
+                    <p>soporte@serialtime.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 Serial Time Derechos Reservados</p>
+                <div class="footer-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Políticas de envío</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/script.js"></script>
 </body>
 </html>

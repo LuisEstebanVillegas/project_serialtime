@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SerialTime - Inicio</title>
     <link rel="stylesheet" href="/CSS/Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <script src="/JS/script.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        
         <div class="container">
             <div class="logo">
-              <img src="Assets/Logo SerialTime v2.1.png" alt="logo" width="80">
+              <a href="/">
+                <img src="Assets/Logo-serialtime.png" alt="logo" width="80">
+              </a>
             </div>
             <div class="header-letras">
-              <h1>SerialTime</h1>
+              <a href="/"><h1>SerialTime</h1></a>
+              
               <nav id="nav">
                 <a href="/" class="active">Inicio</a>
                 <a href="/catálogo/">Catálogo</a>
@@ -27,13 +28,19 @@
             </div>
             
             <div class="header-icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Buscar" class="search-box" id="searchBox">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Buscar" class="search-box">
                 <button class="menu-toggle" id="menuToggle">☰</button>
             </div>
         </div>
     </header>
-
+    <!-- WhatsApp float -->
+    <a href="https://wa.me/573245807701?text=Hola,%20quiero%20contactarme%20con%20un%20asesor." 
+      class="whatsapp-float" 
+      target="_blank"
+      aria-label="Contactar por WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-images">
@@ -44,14 +51,15 @@
 
       <div class="hero-text">
         <h2>Todo lo nuevo y actual</h2>
-        <div class="arrow-down">▼</div>
+        <a href="#productos">
+          <div class="arrow-down">
+            <i class="bi bi-chevron-compact-down" style="font-size: 70px;"></i>
+          </div>
+        </a>
       </div>
     </section>
-
-
-
     <!-- Featured Products -->
-    <section class="featured-products">
+    <section class="featured-products" id="productos">
         <div class="container">
             <h2>Productos Destacados</h2>
             <div class="products-grid">
@@ -98,31 +106,29 @@
       <div class="footer-column brand">
         <h2 class="footer-logo">SerialTime</h2>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
         </div>
       </div>
 
       <div class="footer-column nav">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="nosotros.html">Sobre Nosotros</a>
+        <a href="/">Inicio</a>
+        <a href="catálogo/">Catálogo</a>
+        <a href="contacto/">Contacto</a>
+        <a href="sobre_nosotros/">Sobre Nosotros</a>
       </div>
 
       <div class="footer-column info">
         <a href="#">Términos y condiciones</a>
         <a href="#">Políticas de envío</a>
-        <p>soporte@serialtime.com</p>
+        <a href="mailto:soporte@serialtime.com"><p>soporte@serialtime.com</p></a>
         <p>2025 Serial Time Derechos Reservados</p>
       </div>
 
     </div>
   </footer>
-
-
-    <script src="/JS/script.js"></script>
+    
 </body>
 </html>

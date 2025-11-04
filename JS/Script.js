@@ -27,19 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Búsqueda simple (simulación)
-    var searchBox = document.getElementById('searchBox');
-    if (searchBox) {
-        searchBox.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                var searchTerm = searchBox.value.trim();
-                if (searchTerm) {
-                    alert('Buscando: ' + searchTerm + '\n(Funcionalidad de búsqueda pendiente)');
-                }
-            }
-        });
-    }
-    
     // Animación suave al hacer scroll
     var links = document.querySelectorAll('a[href^="#"]');
     links.forEach(function(link) {
@@ -55,16 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 }
             }
-        });
-    });
-    
-    // Botones "Ver Detalles" (simulación)
-    var detailButtons = document.querySelectorAll('.btn-primary');
-    detailButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            var productCard = button.closest('.product-card');
-            var productName = productCard.querySelector('h3').textContent;
-            alert('Ver detalles de: ' + productName + '\n(Funcionalidad pendiente)');
         });
     });
 });
